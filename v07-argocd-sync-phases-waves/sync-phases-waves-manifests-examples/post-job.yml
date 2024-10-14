@@ -4,6 +4,7 @@ metadata:
   name: mattermost-post-job-success
   annotations:
     argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   template:
     spec:
